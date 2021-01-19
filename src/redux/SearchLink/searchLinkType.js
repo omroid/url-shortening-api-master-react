@@ -1,0 +1,1 @@
+export const SET_TXT_SEARCH = 'SET_TXT_SEARCH'

@@ -1,0 +1,1 @@
+export { setTxtSearch } from './SearchLink/searchLinkAction'

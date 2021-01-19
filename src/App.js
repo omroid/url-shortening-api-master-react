@@ -2,13 +2,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 import React from 'react';
-import Header from './components/Header';
-import Just_short_link from './components/Just_short_link';
-import Footer from './components/Footer';
-import Boost_row from './components/Boost_row';
-import Bubles from './components/Bubles';
-import Advenced from './components/Advenced';
-import Serch_link from './components/Serch_link';
+import Header from './components/HeaderContainer';
+import JustShortLinkContainer from './components/JustShortLinkContainer';
+import Footer from './components/FooterContainer';
+import BoostRowContainer from './components/BoostRowContainer';
+import Bubles from './components/BublesContainer';
+import Advenced from './components/AdvencedContainer';
+import SearchLinkContainer from './components/SearchLinkContainer';
+import { Provider } from 'react-redux'
+import store from './redux/store'
 
 class App extends React.Component {
     //constructor(props) {
@@ -17,25 +19,21 @@ class App extends React.Component {
     //}
     render() {
         return (
-
+            <Provider store={store}>
             <div className="container-fluid">
                 <Header />
-                <Just_short_link />
+                <JustShortLinkContainer />
                 <div className="row lightBlueRow">
                     <div className="container">
-                        <Serch_link />
-                 
-      
+                        <SearchLinkContainer />
                         <Advenced/>
-   
                         <Bubles/>
                     </div>
-
                 </div>
-                <Boost_row />
+                <BoostRowContainer />
                 <Footer />
             </div>
-
+            </Provider>
         );
     }
 }
