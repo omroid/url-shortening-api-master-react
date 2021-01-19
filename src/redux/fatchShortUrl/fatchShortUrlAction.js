@@ -3,12 +3,14 @@ import {
    FETCH_URL_REQUEST, 
     FETCH_URL_SUCCESS,
    FETCH_URL_FAILURE,
-   LOAD_LOCAL_STORAGE
+   LOAD_LOCAL_STORAGE,
 } from './fatchShortUrlTypes'
+import {CLEAR_TXT_SEARCH} from '../SearchLink/searchLinkType'
+
 
 export const fetchURL = (url) => {
   return (dispatch) => {
-
+    dispatch(clearTxtSearch());
     if (is_url(url)===true){
     dispatch(fetchUrlRequest())
     axios
@@ -24,7 +26,8 @@ export const fetchURL = (url) => {
       })
     }
     else{
-        dispatch(fetchUrlFailure("please enter valid url"))
+      dispatch(clearTxtSearch());
+      dispatch(fetchUrlFailure("please enter valid url"))
     }
   }
 }
@@ -54,6 +57,13 @@ export const fetchUrlFailure = error => {
         type: LOAD_LOCAL_STORAGE,
         payload: data
       }
+}
+
+export const clearTxtSearch=()=>{
+  return {
+      type: CLEAR_TXT_SEARCH,
+   
+    }
 }
 
 

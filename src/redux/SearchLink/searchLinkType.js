@@ -1,1 +1,2 @@
 export const SET_TXT_SEARCH = 'SET_TXT_SEARCH'
+export const CLEAR_TXT_SEARCH = 'CLEAR_TXT_SEARCH'
