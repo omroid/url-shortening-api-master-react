@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/url-shortening-api-master-react/static/css/main.8384a5df.chunk.css",
-    "main.js": "/url-shortening-api-master-react/static/js/main.3e41b12d.chunk.js",
-    "main.js.map": "/url-shortening-api-master-react/static/js/main.3e41b12d.chunk.js.map",
-    "runtime-main.js": "/url-shortening-api-master-react/static/js/runtime-main.40dbc3c3.js",
-    "runtime-main.js.map": "/url-shortening-api-master-react/static/js/runtime-main.40dbc3c3.js.map",
+    "main.css": "/url-shortening-api-master-react/static/css/main.2bf1a4c4.chunk.css",
+    "main.js": "/url-shortening-api-master-react/static/js/main.734b3df9.chunk.js",
+    "main.js.map": "/url-shortening-api-master-react/static/js/main.734b3df9.chunk.js.map",
+    "runtime-main.js": "/url-shortening-api-master-react/static/js/runtime-main.5f1b9af4.js",
+    "runtime-main.js.map": "/url-shortening-api-master-react/static/js/runtime-main.5f1b9af4.js.map",
     "static/css/2.ae9f1eb3.chunk.css": "/url-shortening-api-master-react/static/css/2.ae9f1eb3.chunk.css",
-    "static/js/2.afceae51.chunk.js": "/url-shortening-api-master-react/static/js/2.afceae51.chunk.js",
-    "static/js/2.afceae51.chunk.js.map": "/url-shortening-api-master-react/static/js/2.afceae51.chunk.js.map",
-    "static/js/3.9d551ee8.chunk.js": "/url-shortening-api-master-react/static/js/3.9d551ee8.chunk.js",
-    "static/js/3.9d551ee8.chunk.js.map": "/url-shortening-api-master-react/static/js/3.9d551ee8.chunk.js.map",
+    "static/js/2.b75ba3d3.chunk.js": "/url-shortening-api-master-react/static/js/2.b75ba3d3.chunk.js",
+    "static/js/2.b75ba3d3.chunk.js.map": "/url-shortening-api-master-react/static/js/2.b75ba3d3.chunk.js.map",
+    "static/js/3.e914f5dd.chunk.js": "/url-shortening-api-master-react/static/js/3.e914f5dd.chunk.js",
+    "static/js/3.e914f5dd.chunk.js.map": "/url-shortening-api-master-react/static/js/3.e914f5dd.chunk.js.map",
     "index.html": "/url-shortening-api-master-react/index.html",
     "static/css/2.ae9f1eb3.chunk.css.map": "/url-shortening-api-master-react/static/css/2.ae9f1eb3.chunk.css.map",
-    "static/css/main.8384a5df.chunk.css.map": "/url-shortening-api-master-react/static/css/main.8384a5df.chunk.css.map",
-    "static/js/2.afceae51.chunk.js.LICENSE.txt": "/url-shortening-api-master-react/static/js/2.afceae51.chunk.js.LICENSE.txt",
+    "static/css/main.2bf1a4c4.chunk.css.map": "/url-shortening-api-master-react/static/css/main.2bf1a4c4.chunk.css.map",
+    "static/js/2.b75ba3d3.chunk.js.LICENSE.txt": "/url-shortening-api-master-react/static/js/2.b75ba3d3.chunk.js.LICENSE.txt",
     "static/media/App.css": "/url-shortening-api-master-react/static/media/logo.83464303.svg",
     "static/media/illustration-working.c9b5ef54.svg": "/url-shortening-api-master-react/static/media/illustration-working.c9b5ef54.svg",
     "static/media/loading.0f1d2b84.gif": "/url-shortening-api-master-react/static/media/loading.0f1d2b84.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.40dbc3c3.js",
+    "static/js/runtime-main.5f1b9af4.js",
     "static/css/2.ae9f1eb3.chunk.css",
-    "static/js/2.afceae51.chunk.js",
-    "static/css/main.8384a5df.chunk.css",
-    "static/js/main.3e41b12d.chunk.js"
+    "static/js/2.b75ba3d3.chunk.js",
+    "static/css/main.2bf1a4c4.chunk.css",
+    "static/js/main.734b3df9.chunk.js"
   ]
 }
