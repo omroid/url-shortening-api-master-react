@@ -42,13 +42,25 @@ h1 {
 }
 
 /*buttons*/
-.elipsBtn {
-    border-radius: 20px;
+
+.cyanColored{
     background-color: var(--Cyan);
     border-color: var(--Cyan);
     color: white;
 }
 
+.btnMargin{
+    margin-left: 5px;
+}
+
+.redColored{
+        background-color: red;
+        border-color: red;
+       
+}
+.elipsBtn {
+    border-radius: 20px;
+}
 .getStartedBtn {
     min-height: 45px;
 }
@@ -61,22 +73,24 @@ h1 {
 
 .shortLinksRow .btn, .serchLinkBtnDiv .btn {
     border-radius: 5px;
+    color: white;
+}
+.btn .shortLinksRow:hover, .cyanColored:hover {
     background-color: var(--Cyan);
     border-color: var(--Cyan);
     color: white;
+    opacity: 0.8;
 }
-
-    .elipsBtn:hover, .shortLinksRow .btn:hover {
-        background-color: var(--Cyan);
-        border-color: var(--Cyan);
-        color: white;
-        opacity: 0.8;
-    }
+.redColored:hover{
+    background-color: red;
+    border-color: red;
+    color: white;
+    opacity: 0.6;
+}
 
 .widthBtn {
     min-width: 200px;
 }
-
 /*just short link component*/
 
 .justShortLinkRow {
@@ -304,6 +318,12 @@ h1 {
         color: var(--Gray);
     }
 
+    .shortLinksBtnDiv{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
 
 @media screen and (max-width: 576px) {
     /*general*/
@@ -341,7 +361,11 @@ h1 {
 
     .shortLinksBtnDiv {
         margin-top: 15px;
+        display:block
+       
+
     }
+  
 
     .shortLinksResultLinkDiv {
         border-top: 1px solid var(--Cyan);
@@ -384,6 +408,11 @@ h1 {
 
     .shortLinksRow .btn, .serchLinkBtnDiv .btn {
         width: 100%;
+    }
+
+    .btnMargin{
+        margin-top: 5px;
+        margin-left: 0px;
     }
 
     .iconsDiv {

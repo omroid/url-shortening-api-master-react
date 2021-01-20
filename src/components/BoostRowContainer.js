@@ -12,7 +12,7 @@ class Boost_row extends React.Component {
           
             <div className="row boostRow">
                 <div className="col-sm-12"><h3>Boost your links today</h3></div>
-                <div className="col-sm-12">    <button type="button" className="btn elipsBtn getStartedBtn  widthBtn">Get Started</button></div>
+                <div className="col-sm-12">    <button type="button" className="btn cyanColored elipsBtn getStartedBtn  widthBtn">Get Started</button></div>
 
 
             </div>

@@ -20,7 +20,7 @@ class Just_short_link extends React.Component {
                             Build your brand's recognition and get detailed insights
                             on how your links are performing.
                 </p>
-                        <button type="button" className="btn elipsBtn getStartedBtn widthBtn">Get Started</button>
+                        <button type="button" className="btn cyanColored elipsBtn getStartedBtn widthBtn">Get Started</button>
 
                     </div>
                     <div className="col-sm-6">

@@ -4,19 +4,12 @@ import loadingImg from '../images/loading.gif';
 import { connect } from 'react-redux';
 import { setTxtSearch } from '../redux'
 import { fetchURL } from '../redux/fatchShortUrl/fatchShortUrlAction'
+import {removeSearchResult} from '../redux/removeSearch/removeSearchAction'
 // import store from '../redux/store';
 
 class SearchLinkContainer extends React.Component {
 
-    // allStorage() {
-    //     //localStorage.clear();
 
-    //     if (JSON.parse(localStorage.getItem("data")) != null) {  
-    //          return (JSON.parse(localStorage.getItem("data")));
-    //         }
-        
-    //     return [];
-    // }
  
     render() {
         return (
@@ -27,7 +20,7 @@ class SearchLinkContainer extends React.Component {
                         <p>{this.props.fatchUrlResult.error}</p>
                     </div>
                         <div className="col-sm-2 serchLinkBtnDiv">
-                            <button type="button" className="btn" onClick={()=>this.props.fatchShortUrl(this.props.txtSearch)} disabled={this.props.fatchUrlResult.loading}>Shorten It!</button>
+                            <button type="button" className="btn cyanColored" onClick={()=>this.props.fatchShortUrl(this.props.txtSearch)} disabled={this.props.fatchUrlResult.loading}>Shorten It!</button>
                         </div>
                     <div className="col-sm-12 loadingDiv">
                         <img src={loadingImg} className="loadingImg" style={{ visibility: this.props.fatchUrlResult.loading === true ? 'visible' : 'hidden'  }}  />
@@ -37,7 +30,7 @@ class SearchLinkContainer extends React.Component {
                 {
                     this.props.fatchUrlResult.url.map((item, index) => {
                         return (
-                            <ShortLinksContainer serched_link={item.result.original_link} result_Link={item.result.full_short_link} />
+                            <ShortLinksContainer serched_link={item.result.original_link} result_Link={item.result.full_short_link} index={index} removeSearchResult={this.props.removeSearchResult} />
                         )
                     })
                 
@@ -56,8 +49,8 @@ const mapStateToProps = state => {
   const mapDispatchToProps = dispatch => {
     return {
       setTxtSearch: (value) => dispatch(setTxtSearch(value)),
-      fatchShortUrl:(url)=>dispatch(fetchURL(url))
-
+      fatchShortUrl:(url)=>dispatch(fetchURL(url)),
+      removeSearchResult:(index)=>dispatch(removeSearchResult(index))
     }
   }
 

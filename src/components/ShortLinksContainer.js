@@ -22,11 +22,14 @@ class Short_links extends React.Component {
                         <p>{this.props.serched_link}</p>
                         </div>
                     <div className="col-sm-3 shortLinksResultLinkDiv">
-                        <a href={this.props.result_Link}>{this.props.result_Link}</a>
+                      <p><a href={this.props.result_Link}>{this.props.result_Link}</a></p>  
                         </div>
                     <div className="col-sm-3 shortLinksBtnDiv">
-                        <button type="button" className="btn" onClick={(e)=>this.copy(e)}>copy</button>
-                        </div>
+                    
+                        <div><button type="button" className="btn cyanColored" onClick={(e)=>this.copy(e)}>copy</button></div>
+                        <div><button type="button" className="btn redColored btnMargin" onClick={()=>this.props.removeSearchResult(this.props.index)}>remove</button></div>
+                      
+                     </div>
                 </div>
             </div>
 

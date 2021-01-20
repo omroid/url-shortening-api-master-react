@@ -3,9 +3,9 @@ import {
    FETCH_URL_REQUEST, 
     FETCH_URL_SUCCESS,
    FETCH_URL_FAILURE,
-   LOAD_LOCAL_STORAGE,
+
 } from './fatchShortUrlTypes'
-import {CLEAR_TXT_SEARCH} from '../SearchLink/searchLinkType'
+import {clearTxtSearch} from '../SearchLink/searchLinkAction'
 
 
 export const fetchURL = (url) => {
@@ -51,20 +51,9 @@ export const fetchUrlFailure = error => {
     payload: error
   }
 
-  }
-  export const loadLocalStorage=data=>{
-    return {
-        type: LOAD_LOCAL_STORAGE,
-        payload: data
-      }
 }
 
-export const clearTxtSearch=()=>{
-  return {
-      type: CLEAR_TXT_SEARCH,
-   
-    }
-}
+
 
 
 function is_url(str)

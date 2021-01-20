@@ -39,7 +39,7 @@ class Header extends React.Component {
                                                 <div className=" nav-link ">    <button type="button" className="btn blankBtn">Login</button></div>
                                             </li>
                                             <li className="nav-item">
-                                                <div className=" nav-link ">    <button type="button" className="btn elipsBtn">sign up</button></div>
+                                                <div className=" nav-link ">    <button type="button" className="btn cyanColored elipsBtn">sign up</button></div>
                                             </li>
                                         </ul>
                                     </div>

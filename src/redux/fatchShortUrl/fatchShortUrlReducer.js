@@ -2,8 +2,9 @@ import {
     FETCH_URL_REQUEST, 
      FETCH_URL_SUCCESS,
     FETCH_URL_FAILURE,
-    LOAD_LOCAL_STORAGE
  } from './fatchShortUrlTypes'
+ import {LOAD_LOCAL_STORAGE} from '../loaclStorage/localStorageTypes';
+ import{REMOVE_SEARCH_RESULT} from '../removeSearch/removeSearchTypes';
   
   const initialState = {
     loading: false,
@@ -38,6 +39,15 @@ import {
                 error: ''
             }
         }
+        case REMOVE_SEARCH_RESULT :{
+          const result =state.url;
+          result.splice(action.payload, 1);
+          return{
+            url:result
+          }
+        }
+
+
       default: return state
     }
   }
